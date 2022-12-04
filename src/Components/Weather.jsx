@@ -41,12 +41,12 @@ const Weather = () => {
 
   return (
     <>
-    <div className="hero">
+    <div className="container">
       <div className="searchDiv">
-        <div className="search">
+       
           <input
             type="search"
-            placeholder="search..."
+            placeholder="search with city..."
             autoFocus
             id="search"
             className="searchTerm"
@@ -60,10 +60,10 @@ const Weather = () => {
             onClick={getWeatherInfo}>
             Search
           </button>
-        </div>
+          
       </div>
       <Weathercard {...tempInfo} />
-      </div>
+    </div>
     </>
   );
 };

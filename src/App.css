@@ -28,7 +28,7 @@ body {
   display: grid;
   place-items: center;
 }
-.hero{
+.container{
   display: block;
   margin: 3rem 3rem;
   position: relative;
@@ -42,16 +42,9 @@ body {
 }
 
 
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
 .searchTerm {
   width: 50%;
-  border: none;
+  border: 1px solid black;
   padding: 16px;
   height: 20px;
   border-radius: 5px 0 0 5px;
@@ -64,10 +57,9 @@ body {
 }
 
 .searchButton {
-  width: 80px;
-  height: 32px;
+  width: 8rem;
+  height: 2.1rem;
   border: none;
-  
   background-color:#161748;
   text-align: center;
   color: #fff;
@@ -75,11 +67,10 @@ body {
   cursor: pointer;
   font-size: 20px;
   outline: none;
-  font-size: 16px;
+  
 }
 
 .searchButton:hover {
- 
   background-color: #0049B7;
 }
 .widget {
@@ -184,5 +175,36 @@ body {
   text-transform: capitalize;
   color: #080705;
   font-size: 15px;
+} 
+@media (min-width: 720px) {
+  .container{
+    margin: 0px 40px;
+ 
+  
+  }
+  
 }
 
+@media (max-width: 720px) {
+  .container{
+    margin: 0px 40px;
+    
+  }
+  
+}
+@media (max-width: 400px)  {
+  .container{
+    margin: 0px 15px;
+    
+  } 
+}
+
+/*.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+<div className="search"></div> 
+
+*/
