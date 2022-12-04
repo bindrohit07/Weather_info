@@ -33,8 +33,8 @@ const Weathercard = ({
           break;
       }
     }
-  }, [weathermood]);
-
+  }, 
+  [weathermood]);
   // Addition of Date and Time...
   let sec = sunset;
   let date = new Date(sec * 1000);

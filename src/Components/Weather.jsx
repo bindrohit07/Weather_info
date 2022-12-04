@@ -41,7 +41,8 @@ const Weather = () => {
 
   return (
     <>
-      <div className="container">
+    <div className="hero">
+      <div className="searchDiv">
         <div className="search">
           <input
             type="search"
@@ -61,9 +62,8 @@ const Weather = () => {
           </button>
         </div>
       </div>
-
-   
       <Weathercard {...tempInfo} />
+      </div>
     </>
   );
 };
