@@ -7,6 +7,7 @@ const App = () => {
     
     <>
     <Weather/>
+    <footer> <h3>© 2022 Weather-info</h3></footer>
     </>
   )
 }
