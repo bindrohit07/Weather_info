@@ -280,8 +280,7 @@ footer{
     align-items: center;
     font-size: 100px;
   }
-  .temp-info-minmax,
-  .weather-extra-info,
+ 
   .two-sided-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -301,7 +300,7 @@ footer{
   } 
   footer{
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
  
   
