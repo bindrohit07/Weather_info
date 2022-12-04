@@ -178,7 +178,7 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 10px;
     margin-bottom: 50px;
   }
   .searchTerm {
@@ -324,6 +324,44 @@ body {
    .container{
     margin: 5px 5px;
    }
+   .searchDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .searchTerm {
+    width: 50%;
+    border: 1px solid black;
+    padding: 16px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .searchTerm:focus {
+    color: rgb(241, 42, 105);
+  }
+  
+  .searchButton {
+    width: 5rem;
+    height: 2.1rem;
+    border: none;
+    background-color:#161748;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
+    
+  }
+  
+  .searchButton:hover {
+    background-color: #0049B7;
+  }
   .widget {
     
     display: flex;
