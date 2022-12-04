@@ -16,16 +16,12 @@ body {
   display: grid;
   place-items: center;
 }
-.container{
-  display: block;
-  margin: 3rem 3rem;
-  position: relative;
-}
+
 .searchDiv {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: -150px;
+  margin-top: 80px;
   margin-bottom: 50px;
 }
 
@@ -174,18 +170,50 @@ body {
 }
 
 @media (max-width: 720px) {
+  
   .container{
-    margin: 0px 40px;
+    margin: 5px 5px;
+   }
+   .searchDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .searchTerm {
+    width: 50%;
+    border: 1px solid black;
+    padding: 16px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .searchTerm:focus {
+    color: rgb(241, 42, 105);
+  }
+  
+  .searchButton {
+    width: 5rem;
+    height: 2.1rem;
+    border: none;
+    background-color:#161748;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none;
     
   }
   
-}
-@media (max-width: 400px)  {
-  .container{
-    margin: 5px 5px;
-  } 
+  .searchButton:hover {
+    background-color: #0049B7;
+  }
   .widget {
-    background-color: red;
+    
     display: flex;
     height: 400px;
     width: 325px;
@@ -257,31 +285,144 @@ body {
    
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: #fafafa;
+    /* background: #fafafa; */
+    background-color: aqua;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     font-size: 100px;
   }
   
-  .widget .extra-temp p {
-    font-size: 25px;
+  /* .widget .extra-temp p {
+    font-size: 30px;
     font-weight: 600;
   }
-  
+   */
   .temp-info-minmax,
   .weather-extra-info,
   .two-sided-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    align-items: center;
+    text-align: right;
+    margin-right: 15px;
     color: crimson;
   
   }
   
   .widget .extra-temp .extra-info-leftside {
-    margin-left: 5px;
+    margin-left: 15px;
+    text-align: left;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #080705;
+    font-size: 15px;
+  } 
+}
+  
+
+@media (max-width: 400px)  {
+   .container{
+    margin: 5px 5px;
+   }
+  .widget {
+    
+    display: flex;
+    height: 400px;
+    width: 325px;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+      0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  }
+  .widget .weatherIcon {
+    flex: 1 100%;
+    height: 30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: #fafafa;
+    font-family: weathericons;
+   align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 70px;
+  }
+  .widget .weatherInfo {
+   
+    flex: 0 0 100%;
+    height: 30%;
+    background: #080705;
+    /* display: flex; */
+    align-items: center;
+    color: white;
+  }
+  .widget .weatherInfo .temperature {
+    flex: 0 0 40%;
+    width: 100%;
+    font-size: 40px;
+    /* display: flex; 
+    justify-content: space-around;*/
+    margin-right: 30px;
+  }
+  .widget .weatherInfo .description {
+    flex: 0 60%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  /* .widget .weatherInfo .description .weatherCondition {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 80;
+  }  */
+  .widget .weatherInfo .description .place {
+    font-size: 20px;
+  }
+  .widget .date {
+    flex: 0 0 100%;
+    height: 20%;
+    background-color: #0049B7;
+   /* display: flex;
+    justify-content: space-around;
+    align-items: center;*/
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .widget .extra-temp {
+    flex: 1 100%;
+   
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* background: #fafafa; */
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    font-size: 100px;
+  }
+  
+  /* .widget .extra-temp p {
+    font-size: 30px;
+    font-weight: 600;
+  }
+   */
+  .temp-info-minmax,
+  .weather-extra-info,
+  .two-sided-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: right;
+    margin-right: 15px;
+    color: crimson;
+  
+  }
+  
+  .widget .extra-temp .extra-info-leftside {
+    margin-left: 15px;
     text-align: left;
     font-weight: 600;
     text-transform: capitalize;
