@@ -16,7 +16,6 @@ body {
   display: grid;
   place-items: center;
 }
-
 .searchDiv {
   display: flex;
   justify-content: center;
@@ -24,8 +23,6 @@ body {
   margin-top: 80px;
   margin-bottom: 50px;
 }
-
-
 .searchTerm {
   width: 50%;
   border: 1px solid black;
@@ -177,12 +174,6 @@ footer{
     margin-top: 10px;
     margin-bottom: 20px;
   }
-  .search {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
   .searchTerm {
     width: 50%;
     border: 1px solid black;
@@ -280,7 +271,6 @@ footer{
     align-items: center;
     font-size: 100px;
   }
- 
   .two-sided-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -302,9 +292,6 @@ footer{
     text-align: center;
     margin-top: 10rem;
   }
- 
-  
-
 }
   
 
