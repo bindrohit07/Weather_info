@@ -1,13 +1,13 @@
 import React from 'react'
-import Temp from './Components/Weather'
-import "./App.css"
 import Weather from './Components/Weather'
+import "./App.css"
+//import Footer from './Components/Footer'
 const App = () => {
   return (
     
     <>
     <Weather/>
-    <footer> <h3>© 2022 Weather-info</h3></footer>
+    <footer > <h3>© 2022 Weather-info</h3></footer>
     </>
   )
 }

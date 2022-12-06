@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 const Weathercard = ({
   temp,
   humidity,
@@ -59,7 +58,8 @@ const Weathercard = ({
           </div>
         </div>
 
-        <div className="date"> {new Date().toLocaleString()} </div>
+        <div className="date"> {new Date().toLocaleString()}
+         </div>
          { /*this is information section... */}
         
         <div className="extra-temp">
